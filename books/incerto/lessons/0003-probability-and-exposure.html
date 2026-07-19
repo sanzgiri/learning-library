@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 03 — Probability Without a Spreadsheet</title>
+<link rel="stylesheet" href="../../assets/lesson.css" />
+</head>
+<body>
+<article class="lesson">
+  <div class="lesson-meta"><span>LEVEL 03</span><span>~18 MIN</span></div>
+  <h1>Probability without a spreadsheet</h1>
+  <p class="book-source">The Black Swan / Statistical Consequences of Fat Tails</p>
+
+  <p>Ask a meteorologist for tomorrow's forecast and a probability comes with it. Ask anyone to forecast a war, a market crash, or which startup survives, and the "probability" they give you is mostly decoration — a number that feels rigorous but rests on a model of the world nobody can verify.</p>
+
+  <h2>The idea</h2>
+  <p>Taleb's technical work draws a distinction that matters more than the forecast itself: the variable <em>x</em> (will this event happen?) versus your <em>exposure</em> to it, written f(x) (what happens to <em>you</em> if it does?). You can be hopeless at estimating x and still do fine, as long as f(x) is designed so that being wrong is cheap and being right is not.</p>
+  <p>This matters most in domains with <span class="term">fat tails</span> — where rare events dominate the total outcome, and small-sample statistics (averages, standard "normal" bell-curve assumptions) systematically understate how bad or good the extremes can be. In a fat-tailed world, the question "what's the probability" is often less useful than the question "what's my exposure if I'm wrong."</p>
+
+  <h2>Going deeper: the ludic fallacy</h2>
+  <p>Part of why people over-trust computed probabilities is the <span class="term">ludic fallacy</span> — mistaking the clean, well-posed problems of games and laboratories for the messy, open-ended uncertainty of real life. A casino's odds are precisely knowable because the casino built the rules. A recession, a war, or a career isn't a casino: nobody wrote down the full list of possible outcomes in advance, so no probability you compute for it is as trustworthy as the confident decimal point makes it look.</p>
+  <p>There's a deeper reason "design your exposure" beats "compute the probability," covered later in <a href="0012-ergodicity.html">the ergodicity lesson</a>: you don't get to live your decisions in parallel and average the results — you live them once, in sequence, which changes what "the odds favor it" should even mean.</p>
+
+  <h2>Practice</h2>
+  <div class="practice">
+    <p>1. Take one decision you're currently trying to "predict your way through" — a job change, an investment, a bet on a technology. Instead of estimating the probability it goes well, write down: what is your exposure if it goes badly (is the loss capped or open-ended?), and what is your exposure if it goes surprisingly well (is the upside capped or open-ended?).</p>
+    <p>2. Name one number you or people around you treat as precise (a risk score, a forecast, a probability estimate) that is actually a ludic-fallacy stand-in for real uncertainty. What decision was built on that number's false precision?</p>
+  </div>
+
+  <h2>Something to sit with</h2>
+  <p>If exposure matters more than prediction, why do organizations still reward the people who produce confident forecasts over the people who design for "I don't know which way this goes, but I'm fine either way"? What would change if forecasting accuracy stopped being the thing careers get built on?</p>
+
+  <p class="teacher-note">Talk it through with your tutor below — they're listening for whether you've actually shifted from "will X happen" to "what happens to me across how X could go" — that shift is the whole lesson.</p>
+
+  <p class="source-rec">Primary sources: Taleb's <a href="https://arxiv.org/pdf/2001.10488" target="_blank" rel="noopener">Statistical Consequences of Fat Tails</a> (free, technical) and <a href="https://www.fooledbyrandomness.com/notebook.htm" target="_blank" rel="noopener">Notebook #148, #153</a> — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+
+  <nav class="lesson-nav">
+    <a href="0002-narrative-fallacy.html">← Back: The narrative fallacy</a>
+    <a href="0004-antifragility.html">Next: Antifragility →</a>
+  </nav>
+</article>
+<script src="../../assets/chat.js" defer></script>
+<script src="../../assets/toc.js" defer></script>
+</body>
+</html>

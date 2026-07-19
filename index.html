@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Learning Library</title>
+<meta name="description" content="A self-paced, chat-tutored library of books — bring your own API key, work through as many in parallel as you like." />
+<link rel="stylesheet" href="assets/lesson.css" />
+</head>
+<body>
+<main class="dashboard">
+  <header class="dash-header">
+    <div class="eyebrow">Bring your own key. Chat your way through.</div>
+    <h1>Learning Library</h1>
+    <p class="dash-lede">Each book below is a self-contained, chat-tutored course. Work through as many as you like, in parallel — nothing is gated. Your progress lives in this browser; export it to carry it to another device.</p>
+  </header>
+
+  <section class="library-actions">
+    <button type="button" id="exportProgress">Export my progress</button>
+    <label class="import-label">
+      Import progress
+      <input type="file" id="importProgress" accept="application/json" />
+    </label>
+  </section>
+
+  <section class="book-grid" id="bookGrid"></section>
+</main>
+<script src="assets/progress.js" defer></script>
+<script src="assets/library.js" defer></script>
+</body>
+</html>

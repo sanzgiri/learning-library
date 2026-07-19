@@ -1,0 +1,7 @@
+{
+  "name": "learning-library",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

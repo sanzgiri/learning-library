@@ -1,0 +1,5 @@
+interface:
+  display_name: "Teach a Book"
+  short_description: "Turn a book into a chat-tutored course in this library"
+policy:
+  allow_implicit_invocation: false

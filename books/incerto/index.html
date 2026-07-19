@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Incerto — Dashboard</title>
+<meta name="description" content="A chat-tutored course on Nassim Nicholas Taleb's Incerto." />
+<link rel="stylesheet" href="../../assets/lesson.css" />
+</head>
+<body>
+<main class="dashboard">
+  <header class="dash-header">
+    <div class="eyebrow">A field guide to uncertainty</div>
+    <h1>Incerto</h1>
+    <p class="dash-lede">16 lessons across Taleb's five Incerto books plus the technical companion — one idea each, grounded in cited primary sources. Chat with your tutor on each lesson page; it decides when you've actually got it.</p>
+  </header>
+
+  <section class="progress-panel">
+    <h2><span id="completedCount">0</span> of <span id="totalCount">16</span> lessons mastered</h2>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  </section>
+
+  <section class="module-grid" id="moduleGrid"></section>
+</main>
+<script src="../../assets/progress.js" defer></script>
+<script src="../../assets/book-dashboard.js" defer></script>
+<script src="../../assets/toc.js" defer></script>
+</body>
+</html>

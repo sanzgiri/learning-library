@@ -1,0 +1,162 @@
+[
+  {
+    "id": "0001",
+    "file": "0001-luck-vs-skill.html",
+    "title": "The illusion of skill",
+    "book": "Fooled by Randomness",
+    "grounding": "Survivorship bias: we only observe winners; the many who tried the same approach and failed are invisible. Lottery-ticket fallacy: treating a payoff as proof of a good strategy when the strategy might just be buying lots of tickets. Alternative histories: you can't judge a decision by its one outcome, only by the range of outcomes that could plausibly have happened if replayed many times (Taleb's example: $10M from careful dentistry and $10M from one round of Russian roulette are not the same bet, even though they spend the same).",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0002", "0015"],
+    "conceptTags": ["survivorship-bias", "lottery-ticket-fallacy", "alternative-histories", "silent-evidence"]
+  },
+  {
+    "id": "0002",
+    "file": "0002-narrative-fallacy.html",
+    "title": "Black swans & the narrative fallacy",
+    "book": "The Black Swan",
+    "grounding": "A Black Swan has three traits: rarity (an outlier nothing in the past pointed to), extreme impact, and retrospective (not prospective) predictability. Narrative fallacy: our need to fit a convincing story to a series of facts after the outcome is known; a story built after the fact can raise confidence without raising predictive ability. Mediocristan (no single observation can move the aggregate) vs. Extremistan (a single observation can dwarf everything else). The turkey problem: no finite number of confirming observations can prove a rule, but a single disconfirming one can break it (a turkey fed for 1000 days learns nothing about Thanksgiving).",
+    "sourceUrl": "https://www.edge.org/conversation/nassim_nicholas_taleb-the-fourth-quadrant-a-map-of-the-limits-of-statistics",
+    "relatedLessons": ["0001", "0003", "0016"],
+    "conceptTags": ["black-swan", "narrative-fallacy", "mediocristan-extremistan", "turkey-problem", "narrative-discipline", "gray-swan"]
+  },
+  {
+    "id": "0003",
+    "file": "0003-probability-and-exposure.html",
+    "title": "Probability without a spreadsheet",
+    "book": "The Black Swan / Statistical Consequences of Fat Tails",
+    "grounding": "Distinguish the variable x (will this event happen?) from your exposure f(x) (what happens to you if it does?). Under fat tails, small-sample statistics understate extremes, so 'what's my exposure if I'm wrong' matters more than 'what's the probability.' Ludic fallacy: mistaking the well-posed problems of games/casinos for the open-ended uncertainty of real life, where nobody wrote down the full list of possible outcomes in advance.",
+    "sourceUrl": "https://arxiv.org/pdf/2001.10488",
+    "relatedLessons": ["0002", "0012", "0013"],
+    "conceptTags": ["exposure", "fat-tails", "ludic-fallacy"]
+  },
+  {
+    "id": "0004",
+    "file": "0004-antifragility.html",
+    "title": "Antifragility",
+    "book": "Antifragile",
+    "grounding": "Fragile things break under stress (a teacup); robust things stay the same (a rock); antifragile things get stronger from moderate, irregular, survivable stress (a muscle). Quote: 'Antifragility is beyond resilience or robustness. The resilient resists shocks and stays the same; the antifragile gets better.' The mechanism is convexity: an antifragile system's response curves upward with stress dose. Dose matters — benefits only apply within a survivable range; more stress is not always better.",
+    "sourceUrl": "https://www.edge.org/conversation/nassim_nicholas_taleb-understanding-is-a-poor-substitute-for-convexity-antifragility",
+    "relatedLessons": ["0005", "0008"],
+    "conceptTags": ["fragile-robust-antifragile", "convexity", "hormesis"]
+  },
+  {
+    "id": "0005",
+    "file": "0005-via-negativa-and-the-barbell.html",
+    "title": "Via negativa & the barbell strategy",
+    "book": "Antifragile",
+    "grounding": "Via negativa: durable improvement usually comes from removing a harmful exposure, not adding a promising one, since removal rarely creates new hidden fragilities the way addition does. Barbell strategy: split exposure between extreme safety (large portion, cannot be wiped out) and extreme, capped-downside speculation (small portion, open upside) — avoid the 'medium risk' middle where a single bad tail event can ruin you. Iatrogenics: harm caused by an intervention whose stated purpose was to help ('caused by the healer'); naive interventionism is the urge to 'fix' something that would have been fine left alone.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0004", "0012"],
+    "conceptTags": ["via-negativa", "barbell-strategy", "iatrogenics", "naive-interventionism"]
+  },
+  {
+    "id": "0006",
+    "file": "0006-optionality-and-convexity.html",
+    "title": "Optionality & convexity",
+    "book": "Antifragile",
+    "grounding": "Optionality: the right, but not the obligation, to take an upside if conditions are favorable, while downside stays small and known. Convexity: a payoff shape where being wrong costs little and being right pays disproportionately — you don't need to predict correctly more than half the time to come out ahead. Tinkering (cheap trial-and-error) beats top-down planning in complex systems as long as each attempt is convex: capped cost of failure, open-ended payoff of success.",
+    "sourceUrl": "https://www.edge.org/conversation/nassim_nicholas_taleb-understanding-is-a-poor-substitute-for-convexity-antifragility",
+    "relatedLessons": ["0004", "0010"],
+    "conceptTags": ["optionality", "convexity", "tinkering"]
+  },
+  {
+    "id": "0007",
+    "file": "0007-skin-in-the-game.html",
+    "title": "Skin in the game",
+    "book": "Skin in the Game",
+    "grounding": "Fairness and trustworthy advice come from symmetry: whoever gets the upside of a decision should also bear its downside. When that breaks, you get fragility of the whole system, not just an ethical complaint. The 'Intellectual Yet Idiot' (IYI): credentialed people confident enough to prescribe what others should do, without ever paying a cost when wrong. Black Swan ethical problem: because Black Swans are nonrepeatable, there's an asymmetry between the rewards of those who visibly cure a disaster and those who invisibly prevent one.",
+    "sourceUrl": "https://nassimtaleb.org/2016/09/intellectual-yet-idiot/",
+    "relatedLessons": ["0008", "0009", "0015"],
+    "conceptTags": ["skin-in-the-game", "symmetry", "intellectual-yet-idiot", "black-swan-ethical-problem"]
+  },
+  {
+    "id": "0008",
+    "file": "0008-the-lindy-effect.html",
+    "title": "The Lindy effect",
+    "book": "Antifragile / \"An Expert Called Lindy\"",
+    "grounding": "For non-perishable things (ideas, books, technologies, institutions), the longer something has already survived, the longer its expected remaining lifespan — the opposite of how a mortal thing ages. Age is evidence of having been tested against a long, uncontrolled series of real conditions. Quote: 'If a book has been in print for forty years, I can expect it to be in print for another forty years... if it survives another decade, then it will be expected to be in print another fifty years.' The heuristic can be misapplied exactly like the turkey problem — survival so far is not proof of permanent robustness.",
+    "sourceUrl": "https://medium.com/incerto/an-expert-called-lindy-fdb30f146eaf",
+    "relatedLessons": ["0002", "0004", "0007"],
+    "conceptTags": ["lindy-effect"]
+  },
+  {
+    "id": "0009",
+    "file": "0009-minority-rule.html",
+    "title": "The minority rule",
+    "book": "Skin in the Game",
+    "grounding": "A small, rigid, uncompromising minority (often 3-4%) can force an entire flexible majority to comply, because the minority will never deviate while the majority has no strong preference either way. Quote: 'A Kosher (or halal) eater will never eat nonkosher (or nonhalal) food, but a nonkosher eater isn't banned from eating kosher.' The minority's rigidity usually comes from a real stake (religious commitment, health risk, moral line) — their skin in the game is what makes them powerful out of proportion to their numbers.",
+    "sourceUrl": "https://medium.com/incerto/the-most-intolerant-wins-the-dictatorship-of-the-small-minority-3f1f83ce4e15",
+    "relatedLessons": ["0007"],
+    "conceptTags": ["minority-rule"]
+  },
+  {
+    "id": "0010",
+    "file": "0010-domain-dependence.html",
+    "title": "Domain dependence",
+    "book": "Antifragile",
+    "grounding": "Domain dependence is failing to transfer an insight or pattern from the context where it was learned to a different context where it applies just as well (a surgeon who checks vitals rigorously but invests on a hot tip). It's invisible from the inside — it feels like confident judgment, not ignorance, because you're skilled in the domain you're judging from.",
+    "sourceUrl": null,
+    "relatedLessons": ["0006"],
+    "conceptTags": ["domain-dependence"]
+  },
+  {
+    "id": "0011",
+    "file": "0011-bed-of-procrustes-aphorisms.html",
+    "title": "The Bed of Procrustes",
+    "book": "The Bed of Procrustes",
+    "grounding": "This book is a collection of standalone aphorisms, not a sustained argument — each one deliberately compressed and overstated to provoke rather than persuade. Mastery here means engaging seriously with an aphorism (arguing for and against it using your own experience as evidence), not agreeing or disagreeing reflexively.",
+    "sourceUrl": null,
+    "relatedLessons": [],
+    "conceptTags": ["aphorisms"]
+  },
+  {
+    "id": "0012",
+    "file": "0012-ergodicity.html",
+    "title": "Ergodicity & the time average",
+    "book": "Skin in the Game / \"The Logic of Risk Taking\"",
+    "grounding": "Ensemble average: averaging across many people/parallel trials at one moment (100 people gambling once). Time average: one person's own sequential path through repeated exposure (one person gambling 100 times). A system is ergodic when these converge; they diverge wherever there's a real chance of irreversible ruin. What looks like risk aversion is often a correct read of ergodicity, not a psychological quirk: a rational person facing a repeated, ruin-possible bet should refuse it because they only get one sequential life, not an ensemble to average across.",
+    "sourceUrl": "https://medium.com/incerto/the-logic-of-risk-taking-107bf41029d3",
+    "relatedLessons": ["0003", "0005"],
+    "conceptTags": ["ergodicity", "ensemble-vs-time-average", "ruin"]
+  },
+  {
+    "id": "0013",
+    "file": "0013-platonicity.html",
+    "title": "Platonicity",
+    "book": "The Black Swan / Incerto Glossary",
+    "grounding": "Quote: 'Platonicity: the focus on those pure, well-defined, and easily discernible objects like triangles, or more social notions like friendship or love, at the cost of ignoring those objects of seemingly messier and less tractable structures.' The ludic fallacy is the Platonic fallacy applied specifically to uncertainty. The Platonic fold is the point where a clean model touches messy reality and its side effects start to matter. Confirmation error (Platonic confirmation): looking for instances that confirm your model, and finding them.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0003"],
+    "conceptTags": ["platonicity", "platonic-fold", "confirmation-error"]
+  },
+  {
+    "id": "0014",
+    "file": "0014-epistemic-arrogance.html",
+    "title": "Epistemic arrogance",
+    "book": "The Black Swan / Incerto Glossary",
+    "grounding": "Quote: 'Epistemic arrogance: Measure the difference between what someone actually knows and how much he thinks he knows. An excess will imply arrogance, a deficit humility. An epistemocrat is someone of epistemic humility, who holds his own knowledge in greatest suspicion.' This is a gap, not an absolute level — a genuine expert can still be epistemically arrogant if confidence outgrows even a large knowledge base.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0015"],
+    "conceptTags": ["epistemic-arrogance"]
+  },
+  {
+    "id": "0015",
+    "file": "0015-the-empty-suit-problem.html",
+    "title": "The empty-suit problem",
+    "book": "Fooled by Randomness / Incerto Glossary",
+    "grounding": "Quote: 'Empty-suit problem (or \"expert problem\"): Some professionals have no differential abilities from the rest of the population, but for some reason, and against their empirical records, are believed to be experts... They dress up their expertise in beautiful language, jargon, mathematics, and often wear expensive suits.' Distinct from the Intellectual Yet Idiot: this is about whether a field's confident output has ever actually beaten chance, regardless of who bears the cost of being wrong.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0001", "0007", "0014"],
+    "conceptTags": ["empty-suit-problem", "expert-problem"]
+  },
+  {
+    "id": "0016",
+    "file": "0016-the-round-trip-fallacy.html",
+    "title": "The round-trip fallacy",
+    "book": "The Black Swan / Incerto Glossary",
+    "grounding": "Quote: 'Round-trip fallacy: the confusion of absence of evidence of Black Swans (or something else) for evidence of absence of Black Swans (or something else).' 'No evidence of X' is a statement about the limits of your search; 'evidence X doesn't exist' is a much stronger claim about the world. The conversion from the first to the second tends to happen exactly in domains (rare, high-impact events) where data was least likely to have caught it.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0002"],
+    "conceptTags": ["round-trip-fallacy"]
+  }
+]

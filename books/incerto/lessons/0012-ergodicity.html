@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 12 — Ergodicity and the Time Average</title>
+<link rel="stylesheet" href="../../assets/lesson.css" />
+</head>
+<body>
+<article class="lesson">
+  <div class="lesson-meta"><span>LEVEL 12</span><span>~16 MIN</span></div>
+  <h1>Ergodicity and the time average</h1>
+  <p class="book-source">Skin in the Game / "The Logic of Risk Taking"</p>
+
+  <p>Send a hundred people to a casino, each with $100 to gamble for one night. A few will lose it all; most will end the night somewhere close to even; a few will come out ahead. Average across all hundred, and the casino looks like a roughly break-even, mildly risky night out.</p>
+  <p>Now send <em>one</em> person to the same casino, a hundred nights in a row, betting the same way each time. If any single night has even a small chance of losing everything, that one person is eventually ruined — with certainty, given enough nights. Same game, same odds, same average bet. Wildly different conclusion.</p>
+
+  <h2>The idea</h2>
+  <p>Taleb calls this essay "a central chapter that crystallizes all my work" for a reason: the gap between those two setups is <span class="term">ergodicity</span>, and it's the mathematical reason "avoid ruin" runs underneath almost everything else in this curriculum, even in lessons that never used the word.</p>
+  <p>The first setup — a hundred people, once each — is an <span class="term">ensemble average</span>: you're averaging <em>across</em> many parallel people at one moment. The second — one person, a hundred times — is a <span class="term">time average</span>: you're averaging across one person's <em>own</em> sequential path through time. A system is <span class="term">ergodic</span> when those two averages converge to the same answer. Most of the situations classical probability and economics were built to describe are close enough to ergodic that the distinction doesn't bite. But anywhere there's a real chance of irreversible ruin, the two averages diverge — sometimes completely — and only the time average describes what actually happens to the one person who has to live through it.</p>
+  <p>This is why Taleb argues that a lot of what looks like "risk aversion" isn't a psychological quirk or a taste, but a correct read of ergodicity: a rational person facing a repeated, ruin-possible bet <em>should</em> refuse it, not because they dislike risk in the abstract, but because their own single, sequential life is a time average, not an ensemble of parallel lives they get to average across.</p>
+
+  <h2>Why this was hiding in plain sight</h2>
+  <p>Look back at lesson 3: the whole point of "exposure over prediction" was designing so that being wrong is cheap and being right is not — which only matters because you don't get to replay the decision across parallel versions of yourself; you get your one sequential path. Look back at lesson 5: the barbell's safe portion exists specifically so that no single bad night, however unlikely, can end the sequence. Both were ergodicity arguments, unnamed.</p>
+
+  <h2>Practice</h2>
+  <div class="practice">
+    <p>1. Name one repeated decision in your life (not a one-off) where you or someone you know has been reasoning in ensemble terms ("on average this works out") when the real exposure is a time-average, ruin-possible one. What does it look like from each framing?</p>
+    <p>2. Revisit your barbell answer from lesson 5. Which part of it was actually protecting your time average from a single ruinous night, even though you didn't use that language at the time?</p>
+  </div>
+
+  <h2>Something to sit with</h2>
+  <p>If "risk aversion does not exist — what looks like risk aversion is a correct reading of ergodicity," as Taleb argues, then a lot of financial and policy advice that assumes people <em>should</em> maximize expected value is quietly assuming an ensemble the advice-giver doesn't actually live inside. Who benefits from that assumption, and who's exposed to the time-average consequences if it's wrong?</p>
+
+  <p class="teacher-note">Talk it through with your tutor below. Your tutor is listening for whether you've actually located the ensemble-vs-time-average distinction in your example, not just described a risky decision.</p>
+
+  <p class="source-rec">Primary source: Taleb's <a href="https://medium.com/incerto/the-logic-of-risk-taking-107bf41029d3" target="_blank" rel="noopener">"The Logic of Risk Taking"</a> — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+
+  <nav class="lesson-nav">
+    <a href="0011-bed-of-procrustes-aphorisms.html">← Back: The Bed of Procrustes</a>
+    <a href="0013-platonicity.html">Next: Platonicity →</a>
+  </nav>
+</article>
+<script src="../../assets/chat.js" defer></script>
+<script src="../../assets/toc.js" defer></script>
+</body>
+</html>
