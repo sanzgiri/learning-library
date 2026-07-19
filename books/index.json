@@ -3,7 +3,14 @@
     "id": "incerto",
     "title": "Incerto",
     "author": "Nassim Nicholas Taleb",
-    "tagline": "Randomness, Black Swans, antifragility, and skin in the game — 16 lessons across all five books plus the technical companion.",
+    "tagline": "Randomness, Black Swans, antifragility, and skin in the game — 20 lessons across all five books plus the technical companion.",
+    "status": "active"
+  },
+  {
+    "id": "on-the-edge",
+    "title": "On the Edge",
+    "author": "Nate Silver",
+    "tagline": "The River vs. the Village, expected value, and the limits of EV-maximizing logic — 13 lessons grounded in the book's own text and glossary.",
     "status": "active"
   }
 ]

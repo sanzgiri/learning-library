@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 02 — Expected Value & Edge</title>
+<link rel="stylesheet" href="../../assets/lesson.css" />
+</head>
+<body>
+<article class="lesson">
+  <div class="lesson-meta"><span>LEVEL 02</span><span>~12 MIN</span></div>
+  <h1>Expected value & edge</h1>
+  <p class="book-source">On the Edge — Chapter 1, Optimization</p>
+
+  <p>A coin flip pays you $110 if it lands heads and costs you $100 if it lands tails. Should you take it? Most people's gut says "it's basically a coin flip, so it doesn't matter much." A Riverian's gut does arithmetic instead.</p>
+
+  <h2>The idea</h2>
+  <p><span class="term">Expected value</span> (EV) is "the result you expect to wind up with on average after many 'spins of the wheel,' given your knowledge of the odds." For that coin flip: 50% × $110 + 50% × (–$100) = +$5. Positive EV, even though any single flip is close to a coin toss. Having an <span class="term">edge</span> means being reliably +EV over the long run — not winning this particular bet, but being the kind of player who comes out ahead if you ran the same decision a thousand times.</p>
+  <p>Silver's own illustration of the deeper move is a rained-out picnic: should you drive to the beach anyway on a 30% chance the weather clears? If a beach picnic is worth 10, a restaurant near the beach is worth 5, and a restaurant in town is worth 6, "going to the beach is the higher EV option if there's a 30 percent chance of rain" — because heading to the beach preserves the chance of the best outcome without fully giving up a decent fallback. That's <span class="term">optionality</span> smuggled inside an EV calculation: the value isn't just in the odds, it's in keeping a good branch of the decision tree open.</p>
+  <p>The trap is treating "I calculated an EV" as the end of the analysis. An EV is only as good as the probability estimate feeding it — and, as later lessons in this course will press on, a positive EV bet can still be a terrible idea if a bad outcome would wipe you out before the "long run" ever arrives.</p>
+
+  <h2>Practice</h2>
+  <div class="practice">
+    <p>1. Take one recurring decision in your life that you currently make on gut feel (whether to take a meeting, whether to say yes to a favor, whether to try a new vendor). Rough out an actual EV for it — even crude numbers — the way Silver does with the picnic.</p>
+    <p>2. Name one decision where you had "an edge" in Silver's sense — not a one-time win, but a repeatable reason to expect to come out ahead over many tries. How would you actually verify that the edge was real, rather than a lucky run?</p>
+  </div>
+
+  <h2>Something to sit with</h2>
+  <p>EV thinking assumes you get to see "the long run" — that you'll take something like this bet many times. Some of life's biggest decisions (which career, which partner, whether to have a child) you only get to make once or a handful of times. Does expected value even mean anything for a decision you can't repeat? What should replace it, if anything?</p>
+
+  <p class="teacher-note">Talk it through with your tutor below — they're listening for whether you built a real, if rough, EV calculation rather than just restating that "some decisions are worth it on average."</p>
+
+  <p class="source-rec">Primary source: <em>On the Edge</em>, Chapter 1 (Optimization) — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+
+  <nav class="lesson-nav">
+    <a href="0001-the-river-and-the-village.html">← Back: The River and the Village</a>
+    <a href="0003-risk-of-ruin-and-kelly.html">Next: Risk of ruin & the Kelly criterion →</a>
+  </nav>
+</article>
+<script src="../../assets/chat.js" defer></script>
+<script src="../../assets/toc.js" defer></script>
+</body>
+</html>

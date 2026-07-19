@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson 03 — Risk of Ruin & the Kelly Criterion</title>
+<link rel="stylesheet" href="../../assets/lesson.css" />
+</head>
+<body>
+<article class="lesson">
+  <div class="lesson-meta"><span>LEVEL 03</span><span>~16 MIN</span></div>
+  <h1>Risk of ruin & the Kelly criterion</h1>
+  <p class="book-source">On the Edge — Chapter 8, Miscalculation</p>
+
+  <p>Sam Bankman-Fried, on record, said he'd take a bet that offered a 51% chance of doubling the universe's value against a 49% chance of destroying it — and he'd take it again, and again, as many times as offered. He called refusing that bet a failure of nerve. Nate Silver calls it "understood by everybody but Sam Bankman-Fried" as the flaw in naive expected-value maximization.</p>
+
+  <h2>The idea</h2>
+  <p><span class="term">Risk of ruin</span> is "the probability of losing so much money that your ability to make further bets is severely impaired." The <span class="term">Kelly criterion</span>, named for Bell Labs researcher John Kelly Jr., is a formula for bet sizing that answers: given your edge and the odds, what fraction of your bankroll should you actually risk? It "maximizes your returns while minimizing your risk of ruin" — not the same thing as simply maximizing expected value.</p>
+  <p>Silver runs the numbers directly: with a 60% edge on a college football bet, Kelly says wager 16% of your bankroll — most gamblers consider that aggressive and bet "half Kelly" instead. Silver then simulates five thousand NFL seasons two ways: full Kelly sizing, and the SBF-endorsed "5x Kelly" (since Kelly, in SBF's view, was "for wimps"). Full Kelly wins about 80% of the time, averaging a healthy profit, and rarely blows up. 5x Kelly "usually ends in ruin" — a median result of $55 left from a $100,000 bankroll — but its <em>average</em> outcome looks great, because one in however-many simulations turns $100K into $225 billion. "5x Kelly is higher EV — if you don't care about ruin."</p>
+  <p>That's the whole lesson in one sentence: a bet can be strictly higher-EV and still be the wrong bet, because EV is an average across parallel universes you don't get to live in — you only get the one you're actually in, and Kelly-violating sizing means some meaningful share of those universes end in ruin, permanently, before any long-run average could rescue you.</p>
+
+  <h2>Practice</h2>
+  <div class="practice">
+    <p>1. Name one bet-sized decision in your own life — not gambling necessarily, but a commitment of money, time, or reputation with a real (if small) chance of a ruinous downside. Would Kelly logic say you're over-sized, under-sized, or about right, given your actual "bankroll" (savings, reputation, capacity to recover)?</p>
+    <p>2. SBF's mistake wasn't believing in expected value — it was refusing to weight ruin more heavily than the formula's naive average does. Where in your own thinking do you catch yourself reasoning like "the average outcome looks great" while glossing over a tail scenario you couldn't actually survive?</p>
+  </div>
+
+  <h2>Something to sit with</h2>
+  <p>Silver notes that even a "replenishable" bankroll changes the calculus — Elon Musk's nominal $100,000 poker stake isn't really at risk of ruin, because he has much more behind it. Does risk-of-ruin thinking even apply to someone whose bankroll is effectively unlimited — and if the ultra-wealthy are structurally exempt from this whole discipline, what does that do to a culture (the River) that prizes people who take Kelly-violating risks and win?</p>
+
+  <p class="teacher-note">Talk it through with your tutor below — they're listening for whether you've actually distinguished "higher average outcome" from "higher EV, but with real ruin risk," not just said big bets are risky.</p>
+
+  <p class="source-rec">Primary source: <em>On the Edge</em>, Chapter 8 (Miscalculation) — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+
+  <nav class="lesson-nav">
+    <a href="0002-expected-value-and-edge.html">← Back: Expected value & edge</a>
+    <a href="0004-results-oriented-thinking.html">Next: Results-oriented thinking →</a>
+  </nav>
+</article>
+<script src="../../assets/chat.js" defer></script>
+<script src="../../assets/toc.js" defer></script>
+</body>
+</html>

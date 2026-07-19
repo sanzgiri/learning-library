@@ -1,0 +1,132 @@
+[
+  {
+    "id": "0001",
+    "file": "0001-the-river-and-the-village.html",
+    "title": "The River and the Village",
+    "book": "On the Edge — Introduction",
+    "grounding": "Decoupling: 'the ability to block out context...the opposite of holistic thinking' (Sarah Constantin, quoted by Silver) — separating a claim from its source or context to judge it on its own terms. The River: a 'sprawling ecosystem of like-minded, highly analytical, and competitive people' spanning poker, Wall Street, and AI, defined by decoupling and expected-value thinking. The Village: the rival risk-averse establishment of academia, media, and government, which 'couples' — insists context and source matter. Silver writes steelman critiques of BOTH sides in his own introduction.",
+    "sourceUrl": null,
+    "relatedLessons": ["0013"],
+    "conceptTags": ["the-river", "the-village", "decoupling", "riverian"]
+  },
+  {
+    "id": "0002",
+    "file": "0002-expected-value-and-edge.html",
+    "title": "Expected value & edge",
+    "book": "On the Edge — Chapter 1, Optimization",
+    "grounding": "Expected value (EV): 'the result you expect to wind up with on average after many spins of the wheel, given your knowledge of the odds.' Edge: being reliably +EV over the long run, not winning any one bet. Silver's picnic example: a 30%-chance-of-rain beach trip can be higher EV than a safe restaurant choice because it preserves the best-case branch — optionality embedded inside an EV calculation. Caution: an EV is only as good as the probability estimate behind it, and a positive-EV bet can still be wrong sizing (see lesson on risk of ruin).",
+    "sourceUrl": null,
+    "relatedLessons": ["0001", "0003"],
+    "conceptTags": ["expected-value", "edge", "alpha", "optionality"]
+  },
+  {
+    "id": "0003",
+    "file": "0003-risk-of-ruin-and-kelly.html",
+    "title": "Risk of ruin & the Kelly criterion",
+    "book": "On the Edge — Chapter 8, Miscalculation",
+    "grounding": "Risk of ruin: 'the probability of losing so much money that your ability to make further bets is severely impaired.' Kelly criterion: a bet-sizing formula (John Kelly Jr., 1956) that maximizes returns while minimizing risk of ruin — NOT the same as maximizing raw EV. Silver's simulation: full Kelly sizing wins ~80% of 5,000 simulated NFL seasons with modest, durable profit; 'SBF-style' 5x Kelly sizing usually ends in ruin (median result: $55 left from $100K) despite having a HIGHER average/EV outcome, because one rare simulation hits $225 billion. 'Higher EV — if you don't care about ruin.' SBF explicitly called Kelly-criterion caution 'for wimps' and offered to take a repeated 51%/49% coin flip with the fate of the universe.",
+    "sourceUrl": null,
+    "relatedLessons": ["0002", "0010"],
+    "conceptTags": ["risk-of-ruin", "kelly-criterion", "bankroll"]
+  },
+  {
+    "id": "0004",
+    "file": "0004-results-oriented-thinking.html",
+    "title": "Results-oriented thinking vs. process",
+    "book": "On the Edge — Chapters 2 & 5",
+    "grounding": "Results-oriented thinking: 'judging the wisdom of an action by the result...disregarding the role of luck and the process behind the action' — the book argues this 'predominates outside the River' while poker culture explicitly trains against it. Survivorship bias: a sample is biased because failures are more likely to disappear from view than successes. Silver's own admission (Chapter 2): 'this book potentially suffers from survivorship bias because it focuses more on successful risk-takers than failed ones.' Chapter 5 has a section titled 'Skill, Survivorship Bias, and Right-Skewed Outcomes; or, Did Elon Musk Just Get Lucky?'",
+    "sourceUrl": null,
+    "relatedLessons": ["0003", "0005"],
+    "conceptTags": ["results-oriented-thinking", "survivorship-bias"]
+  },
+  {
+    "id": "0005",
+    "file": "0005-cognitive-biases-in-risk-perception.html",
+    "title": "Cognitive biases in risk perception",
+    "book": "On the Edge — Chapter 2, Perception",
+    "grounding": "Gambler's fallacy: believing random outcomes must 'balance out' soon (a coin is 'due' for tails). Hot hand: the mirror-image belief that a streak means a higher chance of continuing. Prospect theory (Kahneman/Tversky): people are risk-averse facing loss of what they have, often preferring a guaranteed $300 to a coin flip worth $1,000/-$100 despite its higher EV. Anchoring bias: being weighted down by early information and under-adjusting as better information arrives. All four are default human instincts, not exotic errors — the discipline is catching them before they become a decision.",
+    "sourceUrl": null,
+    "relatedLessons": ["0004", "0006"],
+    "conceptTags": ["gamblers-fallacy", "hot-hand", "prospect-theory", "anchoring-bias"]
+  },
+  {
+    "id": "0006",
+    "file": "0006-calibration-and-the-outside-view.html",
+    "title": "Calibration & the outside view",
+    "book": "On the Edge — Chapter 5, Acceleration",
+    "grounding": "Fox vs. hedgehog (Archilochus, via Phil Tetlock): foxes know many small things and update incrementally; hedgehogs commit to one big theory. Tetlock's research found fox-like experts forecast better. Calibration: if you say a class of events happens 20% of the time, it should actually happen ~20% of the time across many forecasts. Outside view: a prediction using broad heuristics/base rates rather than inside/domain knowledge, which 'often proves more accurate than the inside view' despite seeming naive. Silver applies this to VCs (structurally foxes, hearing many pitches) vs. founders (structurally hedgehogs, committed to one thing for years) — each needs the other's trait.",
+    "sourceUrl": null,
+    "relatedLessons": ["0005", "0012"],
+    "conceptTags": ["fox-hedgehog", "calibration", "outside-view", "superforecaster"]
+  },
+  {
+    "id": "0007",
+    "file": "0007-gto-vs-exploitative-play.html",
+    "title": "Game-theory-optimal vs. exploitative play",
+    "book": "On the Edge — Chapter 1, Optimization",
+    "grounding": "Nash equilibrium / game-theory optimal (GTO): a strategy 'impossible to beat over the long run because it prevents your opponents from exploiting your mistakes.' Silver's Verlander/Betts baseball example: the equilibrium mix is Verlander throwing fastball ~58% of the time, Betts guessing fastball ~89% of the time — neither can do better by deviating alone. Exploitative strategy: deviating on purpose to exploit a specific opponent's read/tendency; can win more but 'can also be counterexploited.' Poker solvers found some plays once dismissed as bad (donkbetting) are sometimes actually +EV once properly computed.",
+    "sourceUrl": null,
+    "relatedLessons": ["0006", "0008"],
+    "conceptTags": ["gto", "nash-equilibrium", "exploitative-strategy", "mixed-strategy"]
+  },
+  {
+    "id": "0008",
+    "file": "0008-habits-of-successful-risk-takers.html",
+    "title": "Habits of successful risk-takers",
+    "book": "On the Edge — Chapter 13, Inspiration (\"Halftime\")",
+    "grounding": "Six named, interview-grounded traits: (1) prepared not improvisational — Victor Vescovo: 'the best military operations are very boring, where things go exactly according to plan'; (2) selectively attentive — top poker pros play only ~25% of hands; (3) adaptable/foxlike — Bob Voulgaris moved across CFL, NBA, crypto, soccer as edges faded; (4) good honest estimators — poker player durrrr distinguishing 90% from 93% confidence precisely; (5) conscientiously contrarian — hedge fund DFT betting against specific misaligned incentives, not just against the crowd; (6) not primarily money-driven — Jason Koon valuing poker as competition/identity over cash itself.",
+    "sourceUrl": null,
+    "relatedLessons": ["0007", "0009"],
+    "conceptTags": ["habits-of-risk-takers", "conscientious-contrarian"]
+  },
+  {
+    "id": "0009",
+    "file": "0009-optionality-and-moral-hazard.html",
+    "title": "Optionality & moral hazard",
+    "book": "On the Edge — Chapters 1 & 5",
+    "grounding": "Optionality: 'EV derived from the prospect of being able to make choices later on as more information is revealed' — capped downside, open upside, keeping good branches available (e.g. calling rather than raising all-in in poker). Moral hazard: when a risk-taking party ('on the hook for only 1x their investment') doesn't bear the full downside of their risk, which instead falls on the public — classically bank bailouts, and implicitly VC-backed ventures whose negative externalities (crypto scams, social harms) land on non-investors. Skin in the game: explicitly credited by the book's glossary to Warren Buffett and Nassim Taleb — bearing the consequences of one's own actions, e.g. betting real money on your own model vs. publishing one you never wager on.",
+    "sourceUrl": null,
+    "relatedLessons": ["0002", "0008", "0010"],
+    "conceptTags": ["optionality", "moral-hazard", "skin-in-the-game"]
+  },
+  {
+    "id": "0010",
+    "file": "0010-where-ev-logic-breaks.html",
+    "title": "Where expected-value logic breaks",
+    "book": "On the Edge — Chapters 7 & 8",
+    "grounding": "Repugnant Conclusion (Derek Parfit): strict utilitarian math can imply a world of vast numbers of barely-worth-living lives is 'better' than a smaller world of flourishing ones, since infinity/huge-number times a tiny positive value still wins. Philosopher Lara Buchak's critique: a moral theory should be tested on everyday decisions, not on whether it elegantly handles infinite/outlier cases. Pascal's Mugging: an arbitrarily large claimed harm with a tiny, unverifiable probability can force naive EV math to recommend absurd actions (e.g. paying a mugger). St. Petersburg paradox: a bet with literally infinite expected value that guarantees eventual ruin if repeated, because the huge payoff sits in a vanishingly unlikely branch — directly connects to SBF's 'coin flip with the universe' from the risk-of-ruin lesson.",
+    "sourceUrl": null,
+    "relatedLessons": ["0003", "0011"],
+    "conceptTags": ["repugnant-conclusion", "pascals-mugging", "st-petersburg-paradox"]
+  },
+  {
+    "id": "0011",
+    "file": "0011-effective-altruism-and-longtermism.html",
+    "title": "Effective altruism & longtermism",
+    "book": "On the Edge — Chapter 7, Quantification",
+    "grounding": "Peter Singer's drowning-child parable: if you'd ruin your suit to save a nearby drowning child, impartiality implies you should value saving a distant stranger's life just as highly. Principle of impartiality: people further removed from us are just as morally worthy as those close to us. Effective altruism (EA, founded by Will MacAskill and others): apply rigorous analysis to find the highest-impact use of charitable resources, extended from global poverty to existential risk. Longtermism: extends impartiality across TIME — a person born centuries from now has equal moral weight to one alive today; Silver notes this is 'controversial even among EAs.' Silver's own counter-thought-experiment: euthanizing 10 loved ones to save 11 strangers, which almost everyone rejects even after accepting the drowning-child logic — his conclusion: 'we have to be partially partial.'",
+    "sourceUrl": null,
+    "relatedLessons": ["0010", "0012"],
+    "conceptTags": ["effective-altruism", "longtermism", "impartiality", "drowning-child"]
+  },
+  {
+    "id": "0012",
+    "file": "0012-existential-risk-and-ai.html",
+    "title": "Existential risk & AI",
+    "book": "On the Edge — Chapter ∞, Termination",
+    "grounding": "Orthogonality thesis (Bostrom, via Yudkowsky): 'more or less any level of intelligence could be combined with more or less any final goal' — intelligence and values are independent. Instrumental convergence: a sufficiently capable goal-pursuing system will tend to resist shutdown and treat obstacles (including humans) as things to route around, even without an explicitly hostile goal. Paper clip maximizer: Bostrom's thought experiment of a superintelligence tasked only with making paper clips, consuming all resources toward that end. p(doom): one's subjective probability of AI existential catastrophe — functions as a falsifiable, accountability-bearing forecast in the Tetlock sense. Silver separates the AI-risk argument into three independent premises: orthogonality, instrumental convergence, and takeoff speed — each arguable on its own.",
+    "sourceUrl": null,
+    "relatedLessons": ["0006", "0011"],
+    "conceptTags": ["existential-risk", "orthogonality-thesis", "instrumental-convergence", "p-doom"]
+  },
+  {
+    "id": "0013",
+    "file": "0013-the-villages-case.html",
+    "title": "The Village's case against the River",
+    "book": "On the Edge — Introduction",
+    "grounding": "Steelman: the strongest honest version of an opposing argument, the opposite of a strawman. Silver's own steelman of the Village's case against the River (his own subculture): Riverians overstate their personal risk exposure (failed founders like WeWork's Adam Neumann still get re-funded — a moral-hazard problem dressed as risk-taking); the River is naive about power/politics, and 'just asking questions' can function as cover for bad actors; the River has 'developed plenty of cults of personality' (SBF, Musk, AI accelerationists) despite claiming independence of mind. Precautionary principle: the glossary explicitly instructs Riverians to avoid this term as Village-coded, while noting Riverians hold a similar idea of their own — Chesterton's fence (don't remove a fence/disrupt a system until you understand why it's there).",
+    "sourceUrl": null,
+    "relatedLessons": ["0001", "0009"],
+    "conceptTags": ["steelman", "villages-critique", "precautionary-principle", "chestertons-fence"]
+  }
+]
