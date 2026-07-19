@@ -158,5 +158,45 @@
     "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
     "relatedLessons": ["0002"],
     "conceptTags": ["round-trip-fallacy"]
+  },
+  {
+    "id": "0017",
+    "file": "0017-future-blindness.html",
+    "title": "Future blindness",
+    "book": "Fooled by Randomness / Incerto Glossary",
+    "grounding": "Quote: 'Future blindness: our natural inability to take into account the properties of the future — like autism, which prevents one from taking into account the existence of the minds of others.' Not a knowledge gap closable by more information — a structural inability to hold a genuinely different future as a live possibility while planning, analogous to lacking a theory-of-mind faculty rather than lacking specific facts about other minds.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0002", "0012"],
+    "conceptTags": ["future-blindness"]
+  },
+  {
+    "id": "0018",
+    "file": "0018-lockes-madman.html",
+    "title": "Locke's madman",
+    "book": "The Black Swan / Incerto Glossary",
+    "grounding": "Quote: 'Locke's madman: someone who makes impeccable and rigorous reasoning from faulty premises — such as Paul Samuelson, Robert Merton the minor, and Gerard Debreu — thus producing phony models of uncertainty that make us vulnerable to Black Swans.' Skill at valid reasoning and the truth of the premise being reasoned from are separate axes; rigorous mathematics applied to a false premise (e.g. that markets are Gaussian/Mediocristan) is more dangerous than sloppy reasoning, because the rigor suppresses scrutiny of the premise.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0015", "0002"],
+    "conceptTags": ["lockes-madman"]
+  },
+  {
+    "id": "0019",
+    "file": "0019-reverse-engineering-problem.html",
+    "title": "The reverse-engineering problem",
+    "book": "The Black Swan / Incerto Glossary",
+    "grounding": "Quote: 'It is easier to predict how an ice cube would melt into a puddle than, looking at a puddle, to guess the shape of the ice cube that may have caused it. This \"inverse problem\" makes narrative disciplines and accounts (such as histories) suspicious.' Forward prediction (cause to effect) is often well-posed; backward inference (effect to cause) is frequently underdetermined — many different causes could produce the identical observed outcome, so a single confident causal story is a guess, not a deduction.",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0002"],
+    "conceptTags": ["reverse-engineering-problem"]
+  },
+  {
+    "id": "0020",
+    "file": "0020-scorn-of-the-abstract.html",
+    "title": "Scorn of the abstract",
+    "book": "Fooled by Randomness / Incerto Glossary",
+    "grounding": "Quote: 'Scorn of the abstract: favoring contextualized thinking over more abstract, though more relevant, matters.' We reason sharply and emotionally about one concrete, identifiable case, and go numb as stakes scale up into an abstraction with no face attached — even though the abstract, larger-scale case is often the more consequential one. (Note: the glossary's illustrative line about one death vs. a million is commonly but unreliably attributed to Stalin — cite the bias itself, not that attribution.)",
+    "sourceUrl": "https://www.fooledbyrandomness.com/glossary.pdf",
+    "relatedLessons": ["0012", "0001"],
+    "conceptTags": ["scorn-of-the-abstract"]
   }
 ]

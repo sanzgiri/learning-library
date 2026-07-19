@@ -24,10 +24,10 @@ Checklist against Taleb's own [Incerto Glossary](https://www.fooledbyrandomness.
 | Round-trip fallacy | covered 0016 |
 | Barbell strategy | covered 0005 |
 | Black Swan ethical problem | covered 0007 (folded in) |
-| **Future blindness** | **planned** — distinct (structural inability to model the future; Taleb's own analogy to autism/theory-of-mind), not yet written |
-| **Locke's madman** | **planned** — distinct (rigorous reasoning from faulty premises producing phony certainty), not yet written |
-| **Reverse-engineering problem** | **planned** — distinct illustration (predicting an ice cube's melt is easy; inferring the ice cube's shape from a puddle is not) that sharpens narrative fallacy; pairs naturally with 0002 |
-| **Scorn of the abstract** | **planned** — distinct and load-bearing (statistical/moral numbing — "the death of one child is a tragedy, a million is a statistic"), not yet written |
+| Future blindness | covered 0017 |
+| Locke's madman | covered 0018 |
+| Reverse-engineering problem | covered 0019 |
+| Scorn of the abstract | covered 0020 |
 | Academic libertarian | deferred: personal-identity aside, not a transferable idea |
 | Apelles-style strategy | deferred: restates optionality/convexity (0006) under a different name |
 | Bildungsphilister | deferred: Nietzsche-borrowed aside, not core to Taleb's own argument |
@@ -60,4 +60,4 @@ Checklist against Taleb's own [Incerto Glossary](https://www.fooledbyrandomness.
 
 ## Net result
 
-12 terms deliberately deferred (low marginal value as standalone lessons — restatements or asides, not distinct ideas). **4 terms genuinely open**: Future blindness, Locke's madman, the reverse-engineering problem, and scorn of the abstract. These are the next lessons to write for this book, not a permanent gap.
+12 terms deliberately deferred (low marginal value as standalone lessons — restatements or asides, not distinct ideas). All other glossary and later-book terms are covered: 20 lessons total, 0 open.
