@@ -4,8 +4,11 @@
   if (booksIndex === -1) return; // root library page: no per-book sidebar
   var bookId = segments[booksIndex + 1];
   var onLessonPage = segments.indexOf("lessons") !== -1;
-  var manifestUrl = onLessonPage ? "manifest.json" : "lessons/manifest.json";
-  var lessonHrefPrefix = onLessonPage ? "" : "lessons/";
+  // Absolute paths only: any host may normalize /books/<id>/index.html to a bare
+  // /books/<id> with no trailing slash, which breaks relative resolution entirely
+  // (it collapses to /books/, not /books/<id>/). See git history for the bug this fixed.
+  var manifestUrl = "/books/" + bookId + "/lessons/manifest.json";
+  var lessonHrefPrefix = "/books/" + bookId + "/lessons/";
   var currentFile = onLessonPage ? segments[segments.length - 1] : null;
 
   var bookTitle = bookId;
@@ -35,7 +38,7 @@
     links.className = "toc-links";
     if (onLessonPage) {
       var bookLink = document.createElement("a");
-      bookLink.href = "../index.html";
+      bookLink.href = "/books/" + bookId + "/index.html";
       bookLink.className = "toc-home";
       bookLink.textContent = "← This book";
       links.appendChild(bookLink);

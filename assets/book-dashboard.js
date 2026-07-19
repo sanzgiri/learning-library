@@ -16,7 +16,7 @@
   var bookId = booksIndex !== -1 ? segments[booksIndex + 1] : null;
   if (!bookId) return;
 
-  fetch("lessons/manifest.json")
+  fetch("/books/" + bookId + "/lessons/manifest.json")
     .then(function (r) { return r.json(); })
     .then(function (lessons) {
       var completed = window.LibraryProgress ? window.LibraryProgress.getProgress(bookId).completed : [];
@@ -34,7 +34,7 @@
         var done = completed.indexOf(lesson.id) !== -1;
         var card = document.createElement("a");
         card.className = "module-card" + (done ? " done" : "") + (lesson.id === nextUpId ? " next-up" : "");
-        card.href = "lessons/" + lesson.file;
+        card.href = "/books/" + bookId + "/lessons/" + lesson.file;
         card.innerHTML =
           '<span class="module-number">' + lesson.id + "</span>" +
           "<div>" +
