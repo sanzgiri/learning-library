@@ -5,6 +5,12 @@
   var progressFill = document.getElementById("progressFill");
   if (!grid) return;
 
+  var heading = document.createElement("h2");
+  heading.className = "toc-section-heading";
+  heading.id = "chapters";
+  heading.textContent = "Chapters";
+  grid.insertAdjacentElement("beforebegin", heading);
+
   var segments = location.pathname.split("/");
   var booksIndex = segments.indexOf("books");
   var bookId = booksIndex !== -1 ? segments[booksIndex + 1] : null;

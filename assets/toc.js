@@ -8,9 +8,18 @@
   var lessonHrefPrefix = onLessonPage ? "" : "lessons/";
   var currentFile = onLessonPage ? segments[segments.length - 1] : null;
 
-  fetch(manifestUrl)
-    .then(function (r) { return r.json(); })
-    .then(function (lessons) { render(lessons); })
+  var bookTitle = bookId;
+
+  Promise.all([
+    fetch(manifestUrl).then(function (r) { return r.json(); }),
+    fetch("/books/index.json").then(function (r) { return r.json(); }).catch(function () { return []; })
+  ])
+    .then(function (results) {
+      var books = results[1] || [];
+      var match = books.find(function (b) { return b.id === bookId; });
+      if (match && match.title) bookTitle = match.title;
+      render(results[0]);
+    })
     .catch(function () {});
 
   function render(lessons) {
@@ -19,7 +28,7 @@
 
     var heading = document.createElement("div");
     heading.className = "toc-heading";
-    heading.textContent = bookId;
+    heading.textContent = bookTitle;
     nav.appendChild(heading);
 
     var links = document.createElement("div");
