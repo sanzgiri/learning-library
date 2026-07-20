@@ -11,7 +11,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lesson NN — {Title}</title>
-<link rel="stylesheet" href="../../assets/lesson.css" />
+<link rel="stylesheet" href="/assets/lesson.css" />
 </head>
 <body>
 <article class="lesson">
@@ -37,15 +37,15 @@
 
   <p class="teacher-note">Talk it through with your tutor below — {one line on specifically what the tutor is listening for, so the learner knows what "got it" means}.</p>
 
-  <p class="source-rec">Primary source: {citation with link} — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+  <p class="source-rec">Primary source: {citation with link} — see <a href="/books/{id}/RESOURCES.md">RESOURCES.md</a>.</p>
 
   <nav class="lesson-nav">
     <a href="{prev}.html">← Back: {Prev title}</a>
     <a href="{next}.html">Next: {Next title} →</a>
   </nav>
 </article>
-<script src="../../assets/chat.js" defer></script>
-<script src="../../assets/toc.js" defer></script>
+<script src="/assets/chat.js" defer></script>
+<script src="/assets/toc.js" defer></script>
 </body>
 </html>
 ```
@@ -57,3 +57,4 @@
 - **Cross-link at least one related lesson** via a real `<a href>`, not just a mention in prose.
 - **The `teacher-note` sets the bar the tutor is instructed to check** (via that lesson's `grounding` field in the manifest) — write it so a learner knows what "got it" means before they start typing.
 - **Keep it short.** One hook, one core idea (plus at most one "going deeper"), 2-3 exercises, one discussion question. If a lesson needs a second "going deeper" section, it's probably two lessons.
+- **Every reference to `assets/` or a sibling book file must be an absolute path (`/assets/...`, `/books/<id>/RESOURCES.md`), never `../`-relative.** A real bug, found the hard way: several hosts (and the local `serve` dev server) normalize `/books/<id>/lessons/NNNN-slug.html` to an extension-less URL with no trailing slash. Once the browser is at that normalized URL, a `../../assets/` reference resolves against the wrong directory — it collapses two path levels into one — and the stylesheet, `chat.js`, and `toc.js` all silently 404, which breaks the page's own navigation and chat widget with no visible error except in the console. Same-directory links (prev/next lesson nav, no `../`) are unaffected and can stay relative.
