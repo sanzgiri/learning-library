@@ -229,7 +229,7 @@
     callTutor();
   });
 
-  fetch("/books/" + bookId + "/lessons/manifest.json")
+  fetch("manifest.json")
     .then(function (r) { return r.json(); })
     .then(function (manifest) {
       lesson = manifest.find(function (l) { return l.id === lessonId; });

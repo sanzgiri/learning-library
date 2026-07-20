@@ -3,11 +3,11 @@
   if (!grid) return;
 
   function render() {
-    fetch("/books/index.json")
+    fetch("books/index.json")
       .then(function (r) { return r.json(); })
       .then(function (books) {
         return Promise.all(books.map(function (book) {
-          return fetch("/books/" + book.id + "/lessons/manifest.json")
+          return fetch("books/" + book.id + "/lessons/manifest.json")
             .then(function (r) { return r.json(); })
             .then(function (manifest) { return { book: book, total: manifest.length }; })
             .catch(function () { return { book: book, total: 0 }; });
@@ -24,7 +24,7 @@
           var status = done === 0 ? "Not started" : (total > 0 && done >= total ? "Complete" : "In progress");
           var card = document.createElement("a");
           card.className = "book-card" + (status === "Complete" ? " complete" : "");
-          card.href = "/books/" + book.id + "/index.html";
+          card.href = "books/" + book.id + "/index.html";
           card.innerHTML =
             "<h3>" + book.title + "</h3>" +
             '<p class="book-author">' + (book.author || "") + "</p>" +

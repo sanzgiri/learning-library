@@ -4,18 +4,23 @@
   if (booksIndex === -1) return; // root library page: no per-book sidebar
   var bookId = segments[booksIndex + 1];
   var onLessonPage = segments.indexOf("lessons") !== -1;
-  // Absolute paths only: any host may normalize /books/<id>/index.html to a bare
-  // /books/<id> with no trailing slash, which breaks relative resolution entirely
-  // (it collapses to /books/, not /books/<id>/). See git history for the bug this fixed.
-  var manifestUrl = "/books/" + bookId + "/lessons/manifest.json";
-  var lessonHrefPrefix = "/books/" + bookId + "/lessons/";
+  // Plain relative paths, correctly counted for each page's actual depth --
+  // subpath-agnostic by construction (works under a GitHub Pages project site,
+  // a custom domain at root, anywhere) without needing an absolute path or a
+  // dynamic <base> tag. A dynamic <base> via document.write was tried and
+  // rejected: Chromium's preload scanner fetches <link>/<script src> resources
+  // by scanning raw HTML before the script runs, so it never sees the
+  // corrected base and 404s regardless of what the final DOM looks like.
+  var manifestUrl = onLessonPage ? "manifest.json" : "lessons/manifest.json";
+  var lessonHrefPrefix = onLessonPage ? "" : "lessons/";
+  var toRoot = onLessonPage ? "../../../" : "../../";
   var currentFile = onLessonPage ? segments[segments.length - 1] : null;
 
   var bookTitle = bookId;
 
   Promise.all([
     fetch(manifestUrl).then(function (r) { return r.json(); }),
-    fetch("/books/index.json").then(function (r) { return r.json(); }).catch(function () { return []; })
+    fetch(toRoot + "books/index.json").then(function (r) { return r.json(); }).catch(function () { return []; })
   ])
     .then(function (results) {
       var books = results[1] || [];
@@ -38,13 +43,13 @@
     links.className = "toc-links";
     if (onLessonPage) {
       var bookLink = document.createElement("a");
-      bookLink.href = "/books/" + bookId + "/index.html";
+      bookLink.href = "../index.html";
       bookLink.className = "toc-home";
       bookLink.textContent = "← This book";
       links.appendChild(bookLink);
     }
     var libraryLink = document.createElement("a");
-    libraryLink.href = "/";
+    libraryLink.href = toRoot + "index.html";
     libraryLink.className = "toc-home";
     libraryLink.textContent = "All books";
     links.appendChild(libraryLink);

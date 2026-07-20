@@ -4,7 +4,7 @@ A multi-book, self-paced, self-grading tutor. Point the `teach-book` skill (`.ag
 
 ## How it works
 
-- **Fully static.** No server, no server-held API keys. Deployed to Netlify as plain HTML/CSS/JS.
+- **Fully static.** No server, no server-held API keys. Deployed to GitHub Pages as plain HTML/CSS/JS.
 - **Bring your own key.** Each visitor supplies their own Anthropic API key (stored only in their browser) to chat with the tutor. Conversations go straight from the browser to Anthropic's API — nothing touches a server we run.
 - **Genuine multi-turn chat, not a quiz.** The tutor is Socratic: it asks, pushes back, and — when it judges you've actually understood a lesson, not just recited it — calls a `recordMastery` tool that logs the win.
 - **One library, many books, all in parallel.** The root page lists every book with independent progress; nothing is gated behind finishing another.
@@ -38,4 +38,4 @@ npm run dev
 
 ## Deploy
 
-Push to the branch Netlify is watching — `netlify.toml` publishes the repo root as-is.
+Push to `main` — `.github/workflows/pages.yml` builds and publishes the repo root to GitHub Pages automatically. Live at `https://sanzgiri.github.io/learning-library/`.

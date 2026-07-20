@@ -11,7 +11,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lesson NN — {Title}</title>
-<link rel="stylesheet" href="/assets/lesson.css" />
+<link rel="stylesheet" href="../../../assets/lesson.css" />
 </head>
 <body>
 <article class="lesson">
@@ -37,15 +37,15 @@
 
   <p class="teacher-note">Talk it through with your tutor below — {one line on specifically what the tutor is listening for, so the learner knows what "got it" means}.</p>
 
-  <p class="source-rec">Primary source: {citation with link} — see <a href="/books/{id}/RESOURCES.md">RESOURCES.md</a>.</p>
+  <p class="source-rec">Primary source: {citation with link} — see <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
 
   <nav class="lesson-nav">
     <a href="{prev}.html">← Back: {Prev title}</a>
     <a href="{next}.html">Next: {Next title} →</a>
   </nav>
 </article>
-<script src="/assets/chat.js" defer></script>
-<script src="/assets/toc.js" defer></script>
+<script src="../../../assets/chat.js" defer></script>
+<script src="../../../assets/toc.js" defer></script>
 </body>
 </html>
 ```
@@ -57,4 +57,5 @@
 - **Cross-link at least one related lesson** via a real `<a href>`, not just a mention in prose.
 - **The `teacher-note` sets the bar the tutor is instructed to check** (via that lesson's `grounding` field in the manifest) — write it so a learner knows what "got it" means before they start typing.
 - **Keep it short.** One hook, one core idea (plus at most one "going deeper"), 2-3 exercises, one discussion question. If a lesson needs a second "going deeper" section, it's probably two lessons.
-- **Every reference to `assets/` or a sibling book file must be an absolute path (`/assets/...`, `/books/<id>/RESOURCES.md`), never `../`-relative.** A real bug, found the hard way: several hosts (and the local `serve` dev server) normalize `/books/<id>/lessons/NNNN-slug.html` to an extension-less URL with no trailing slash. Once the browser is at that normalized URL, a `../../assets/` reference resolves against the wrong directory — it collapses two path levels into one — and the stylesheet, `chat.js`, and `toc.js` all silently 404, which breaks the page's own navigation and chat widget with no visible error except in the console. Same-directory links (prev/next lesson nav, no `../`) are unaffected and can stay relative.
+- **Use plain relative paths, correctly counted — never an absolute path (`/assets/...`) and never a dynamic `<base>` tag.** Both were tried and rejected. Absolute paths break the moment the site is deployed under a subpath (e.g. a GitHub Pages project site at `username.github.io/repo-name/` — an absolute `/assets/...` points at the *domain* root, not the site root, and 404s). A `<base>` tag set dynamically via `document.write` doesn't help either: Chromium's preload scanner fetches `<link>`/`<script src>` resources by scanning the raw HTML *before* any script runs, so it never sees the corrected base and 404s regardless of what the final DOM looks like. Plain relative paths, correctly counted for each file's real depth, are subpath-agnostic by construction and match how GitHub Pages, Netlify, and Cloudflare Pages actually serve files (none of them rewrite an exact `.html` URL by default — only the local `serve` dev tool does that, which is why `serve.json` in this repo sets `"cleanUrls": false`, so local testing matches production instead of lying to you).
+- **The exact counts, from `books/<id>/lessons/NNNN-slug.html` (depth 3):** `../../../assets/...` for the stylesheet and both scripts (up 3, to site root); `../RESOURCES.md` for the source citation (up 1, to `books/<id>/`); bare `NNNN-other-slug.html` for prev/next nav and any inline cross-link to a sibling lesson (same directory, no `../` at all). Get the depth wrong in either direction and the page's own stylesheet, chat widget, and sidebar silently fail with no visible symptom except a 404 in the browser console — always verify with an actual browser console check (Playwright or equivalent), not just a curl status code on the HTML file itself, which will report 200 even when every sub-resource it references is broken.
